@@ -1,0 +1,22 @@
+PODS:
+  - AdditionCalculator (1.0.0)
+
+DEPENDENCIES:
+  - AdditionCalculator (from `https://github.com/mim-dev/AdditionCalculator`, tag `1.0.0`)
+
+EXTERNAL SOURCES:
+  AdditionCalculator:
+    :git: https://github.com/mim-dev/AdditionCalculator
+    :tag: 1.0.0
+
+CHECKOUT OPTIONS:
+  AdditionCalculator:
+    :git: https://github.com/mim-dev/AdditionCalculator
+    :tag: 1.0.0
+
+SPEC CHECKSUMS:
+  AdditionCalculator: edae35a491223648c9a6047593670002a923eedf
+
+PODFILE CHECKSUM: 36881a40b5cdb9ac64c9e3356f6c3a18a7e34830
+
+COCOAPODS: 1.11.3

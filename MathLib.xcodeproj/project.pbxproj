@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		022C43B7296DBAB90084F44A /* MathLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 022C43B6296DBAB90084F44A /* MathLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		022C43BE296DBAF70084F44A /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022C43BD296DBAF70084F44A /* Math.swift */; };
+		0F573117AE774B45761DB140 /* Pods_MathLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F93C374B69F1ACE2F5F71FE /* Pods_MathLib.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		022C43B3296DBAB90084F44A /* MathLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MathLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		022C43B6296DBAB90084F44A /* MathLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MathLib.h; sourceTree = "<group>"; };
 		022C43BD296DBAF70084F44A /* Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
+		6B36C35805EA52579CD153E3 /* Pods-MathLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathLib.release.xcconfig"; path = "Target Support Files/Pods-MathLib/Pods-MathLib.release.xcconfig"; sourceTree = "<group>"; };
+		8F93C374B69F1ACE2F5F71FE /* Pods_MathLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MathLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7C04647711D96065AB6FB38 /* Pods-MathLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathLib.debug.xcconfig"; path = "Target Support Files/Pods-MathLib/Pods-MathLib.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -22,6 +26,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F573117AE774B45761DB140 /* Pods_MathLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +38,8 @@
 			children = (
 				022C43B5296DBAB90084F44A /* MathLib */,
 				022C43B4296DBAB90084F44A /* Products */,
+				F517BFBA4B70A0B48DB51488 /* Pods */,
+				2356771D3072DAB396921B9E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,6 +60,24 @@
 			path = MathLib;
 			sourceTree = "<group>";
 		};
+		2356771D3072DAB396921B9E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F93C374B69F1ACE2F5F71FE /* Pods_MathLib.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F517BFBA4B70A0B48DB51488 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A7C04647711D96065AB6FB38 /* Pods-MathLib.debug.xcconfig */,
+				6B36C35805EA52579CD153E3 /* Pods-MathLib.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -71,6 +96,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 022C43BA296DBAB90084F44A /* Build configuration list for PBXNativeTarget "MathLib" */;
 			buildPhases = (
+				3ABDBB16BD15D4587AE3565E /* [CP] Check Pods Manifest.lock */,
 				022C43AE296DBAB90084F44A /* Headers */,
 				022C43AF296DBAB90084F44A /* Sources */,
 				022C43B0296DBAB90084F44A /* Frameworks */,
@@ -127,6 +153,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3ABDBB16BD15D4587AE3565E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MathLib-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		022C43AF296DBAB90084F44A /* Sources */ = {
@@ -257,6 +308,7 @@
 		};
 		022C43BB296DBAB90084F44A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7C04647711D96065AB6FB38 /* Pods-MathLib.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +348,7 @@
 		};
 		022C43BC296DBAB90084F44A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B36C35805EA52579CD153E3 /* Pods-MathLib.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;

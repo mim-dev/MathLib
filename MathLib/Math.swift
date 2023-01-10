@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import AdditionCalculator
 
 public class Math {
     
@@ -14,11 +15,8 @@ public class Math {
     }
     
     public func addition(operandOne: Int, operandTwo: Int) -> Int {
- 
-        return operandOne + operandTwo
-        
-//        let additionCalculator = Adder()
-//        return additionCalculator.addIntOperands(operandOne: operandOne, operandTwo: operandTwo)
+         let additionCalculator = Adder()
+        return additionCalculator.addIntOperands(operandOne: operandOne, operandTwo: operandTwo)
     }
     
     public func subtraction(operandOne: Int, operandTwo: Int) -> Int {
