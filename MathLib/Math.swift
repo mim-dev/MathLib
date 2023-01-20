@@ -16,7 +16,7 @@ public class Math {
     
     public func addition(operandOne: Int, operandTwo: Int) -> Int {
          let additionCalculator = Adder()
-        return additionCalculator.addIntOperands(operandOne: operandOne, operandTwo: operandTwo)
+        return additionCalculator.addIntegerOperands(operandOne: operandOne, operandTwo: operandTwo)
     }
     
     public func subtraction(operandOne: Int, operandTwo: Int) -> Int {

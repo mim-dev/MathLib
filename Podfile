@@ -6,6 +6,6 @@ target 'MathLib' do
   use_frameworks!
 
   # Pods for MathLib
-  pod 'AdditionCalculator', :git => 'https://github.com/mim-dev/AdditionCalculator', :tag => '1.0.0'
+  pod 'AdditionCalculator', :git => 'https://github.com/mim-dev/AdditionCalculator', :tag => '2.0.0'
   
 end
